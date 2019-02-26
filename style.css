@@ -1,7 +1,18 @@
 
+body{
+  background-color: black;
+}
 h1{
   font-family:  "Trebuchet MS", Helvetica, sans-serif;
+  text-align: right;
+  color:white;
+  font-size: 18px;
 }
 h2{
   font-family:  "Trebuchet MS", Helvetica, sans-serif;
+  color:white;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
 }

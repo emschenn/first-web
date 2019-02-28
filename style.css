@@ -3,7 +3,9 @@ body::-webkit-scrollbar {
   display: none;
 }
 body{
-  background-color: #0a1e27;	
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(60deg, #091d28 70%, #4c656c 100%);
 }
 p.banner{
   text-align: right;
@@ -21,7 +23,7 @@ p.menu{
   color: white;
   position: absolute;
   top: 10px;
-  right: 80px;
+  right: 120px;
   font-size: 12px;
 	border-top-style: solid;
   border-bottom-style: solid;
@@ -41,8 +43,7 @@ img{
 #info{
 	height: 200px;
 	line-height:10px;
-  border-left: 8px solid white;
-	padding-top: 0px; 
+  border-left: 8px solid white; 
 	padding-left:10px;
 	padding-bottom:40px;
   position: absolute;
@@ -53,7 +54,10 @@ p{
   font-family:  'Ubuntu', sans-serif;
   color:white;
 	font-size:14px;
-	line-height: 24px;　　　
+	line-height: 20px;　　　
+}
+p.star{
+	font-size:26px;
 }
 h{
   top: 150px;
@@ -105,4 +109,34 @@ button{
 	font-family:'Ubuntu', sans-serif;
 	box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
 	opacity:0.8;
+  transition: 1s;
+}
+
+.button:hover {
+  background-color: #224682;
+  color: white;
+}
+.circle {
+  display: block;
+  background-image: radial-gradient(closest-corner at 85% 15%, #deb975 0%,#dda440 11%,#ce5f2b 25%,#bd3227 35%,#a82325 47%,#871c2f 60%,#3d0f49 79%,#091d28 100%);
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  margin: 0;
+	position: absolute;
+	top: 150px;
+	right: 200px;
+	animation-name: floating;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+	0% { transform: translate(0px,  0px); }
+  12%  { transform: translate(60px, 32px); }
+  33%   { transform: translate(27px, 12px); }    
+  47%  { transform: translate(39px, 60px); }
+  69%   { transform: translate(9px, 26px); }    
+  100%   { transform: translate(-10px, 32px); }    
 }

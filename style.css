@@ -1,18 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Karla:700|Oswald:700|Source+Sans+Pro:600|Ubuntu:700');
 body::-webkit-scrollbar {
   display: none;
+  overflow:hidden;
 }
-body{
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(60deg, #091d28 70%, #4c656c 100%);
+html {
+    height: 100%;
+}
+body{ 
+  height: 100%; 
+  overflow: hidden;
+  background: linear-gradient(50deg, #091d28 70%, #4c656c 100%);
+	background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 p.banner{
   text-align: right;
 	color:white;
   font-family:  'Ubuntu', sans-serif;
-  font-size: 16px;
-	line-height: 24px;　　　
+  font-size: 12px;
+	line-height: 20px;　　　
   letter-spacing: 3px;
   position: absolute;
   top: 8px;
@@ -23,7 +29,7 @@ p.menu{
   color: white;
   position: absolute;
   top: 10px;
-  right: 120px;
+  right: 140px;
   font-size: 12px;
 	border-top-style: solid;
   border-bottom-style: solid;
@@ -41,14 +47,15 @@ img{
 }
 
 #info{
-	height: 200px;
-	line-height:10px;
-  border-left: 8px solid white; 
-	padding-left:10px;
-	padding-bottom:40px;
+	height: 160px;
+	line-height:6px;
+  border-left: 6px solid white; 
+	padding-left:8px;
+	padding-top:1px;
+  padding-bottom:30px;
   position: absolute;
-	left:130px;
-	top:420px;
+	left:160px;
+	top:390px;
 }
 p{
   font-family:  'Ubuntu', sans-serif;
@@ -57,23 +64,25 @@ p{
 	line-height: 20px;　　　
 }
 p.star{
+  line-height:10px;
 	font-size:26px;
 }
 h{
-  top: 150px;
-	line-height:120px;
+  top: 160px;
+	line-height:100px;
   font-family:'Oswald', sans-serif;
   color:white;
-  left: 150px;
-  font-size: 120px;
+  left: 120px;
+  font-size: 100px;
 }
 h.ss{
-	opacity:0.5;
+  mix-blend-mode:exclusion;
 }
 p.text{
   top: 300px;
   left: 60px;
   opacity: 0.5;
+  line-height:5px;
 }
 d{
   font-family:'Oswald', sans-serif;
@@ -83,43 +92,40 @@ d{
 #dir{
 	transform:rotate(90deg);
   position: absolute;
-	left:380px;
-	top:480px;
-	line-height: 10px;　　　
+	left:330px;
+	top:450px;
+	line-height: 12px;　　　
 }
 #title{	
   position: absolute;
-	left:310px;
-	top:100px;
+	left:290px;
+	top:110px;
 }
-button{
-	background-color: white;
-  border: none;
-  color: black;
-  padding: 25px 70px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  position: absolute;
+
+.button {
+	font-size: 12pt;
+	position: absolute;
+	top: 400px;
 	right:300px;
-	top:430px;
+  width: 210px;
+  height: 60px;
+  border: 0px;
+  display: block;
+  background: linear-gradient(to right,#009ACD 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-in;
 	font-family:'Ubuntu', sans-serif;
-	box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
-	opacity:0.8;
-  .transition(all 0.4s linear);
-  
 }
 
 .button:hover {
-  background-color: #224682;
-  color: white;
+	color:white;
+  background-position: left bottom;
 }
+  
 .circle {
   display: block;
-  background-image:radial-gradient(closest-corner at 85% 15%, #deb975 0%,#dda440 30%,#db7f15 60%,#ce5f2b 90%,#bd3227 120%,#a82325 160%,#871c2f 200%,#7f0e2e 250%,#071821 350%);
+  background-image:radial-gradient(closest-corner at 85% 15%, #deb975 0%,#dda440 50%,#db7f15 80%,#ce5f2b 120%,#bd3227 160%,#a82325 180%,#071821 350%);
   border-radius: 50%;
   box-shadow: 0px 0px 300px black; 
   height: 300px;

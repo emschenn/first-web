@@ -109,7 +109,8 @@ button{
 	font-family:'Ubuntu', sans-serif;
 	box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
 	opacity:0.8;
-  transition: 1s;
+  .transition(all 0.4s linear);
+  
 }
 
 .button:hover {
@@ -118,8 +119,9 @@ button{
 }
 .circle {
   display: block;
-  background-image: radial-gradient(closest-corner at 85% 15%, #deb975 0%,#dda440 11%,#ce5f2b 25%,#bd3227 35%,#a82325 47%,#871c2f 60%,#3d0f49 79%,#091d28 100%);
+  background-image:radial-gradient(closest-corner at 85% 15%, #deb975 0%,#dda440 30%,#db7f15 60%,#ce5f2b 90%,#bd3227 120%,#a82325 160%,#871c2f 200%,#7f0e2e 250%,#071821 350%);
   border-radius: 50%;
+  box-shadow: 0px 0px 300px black; 
   height: 300px;
   width: 300px;
   margin: 0;
